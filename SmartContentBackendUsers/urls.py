@@ -20,4 +20,7 @@ from authentication import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', views.SignupView.as_view(), name='users'),
+    path('dj-rest-auth/', include('dj_rest_auth.urls')),
+    path('dj-rest-auth/google/login/', views.GoogleLoginView.as_view(), name="google_login"),
+    #path("~redirect/", view= views.UserRedirectView.as_view(), name="redirect")
 ]
