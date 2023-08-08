@@ -48,6 +48,8 @@ class SignupView(APIView):
             # Log in the user by associating the user with the request session.
             login(request, user)
 
+            idinfo['user_id'] = user.id
+
             return Response({'message': 'User authenticated successfully', 'userData': idinfo})
 
 
