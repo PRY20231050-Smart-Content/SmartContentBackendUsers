@@ -105,7 +105,7 @@ DATABASES = {
         'OPTIONS': {
             'charset': 'utf8mb4',
             'ssl': {
-                'ca': '/home/smartcontentmachine/projects/SmartContentBackendUsers/DigiCertGlobalRootCA.crt.pem', # Ruta al archivo SSL
+                'ca': '/SmartContentBackendUsers/DigiCertGlobalRootCA.crt.pem', # Ruta al archivo SSL
             },
         },
     }
