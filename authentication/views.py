@@ -16,10 +16,12 @@ from dj_rest_auth.registration.views import SocialLoginView
 class SignupView(APIView):
     def post(self, request):
         try:
+            print('cariolinasd.data ', request.data)
             credential = request.data.get('credential', None)
             # Specify the CLIENT_ID of the app that accesses the backend:
             idinfo = id_token.verify_oauth2_token(credential, requests.Request(), "224188928478-l145vhrguhv8jq2f5dbmnds2p5md8kjp.apps.googleusercontent.com")
 
+            print('idinfo ', idinfo)
             # Or, if multiple clients access the backend server:
             # idinfo = id_token.verify_oauth2_token(token, requests.Request())
             # if idinfo['aud'] not in [CLIENT_ID_1, CLIENT_ID_2, CLIENT_ID_3]:
@@ -31,6 +33,8 @@ class SignupView(APIView):
 
             # ID token is valid. Get the user's Google Account ID from the decoded token.
             email = idinfo['email']
+            
+            print('carrrrrrrrrrrrrr ', email)
 
             print('idinfo ', idinfo)
 

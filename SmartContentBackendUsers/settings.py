@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(3$6iu*b2fvjr65do74pu(q&rvomf1l#fbr0kr87f7et@f&&#*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['20.106.131.22']
 
 
 # Application definition
@@ -97,7 +97,7 @@ WSGI_APPLICATION = 'SmartContentBackendUsers.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tesis2',
+        'NAME': 'tesis',
         'USER': 'root', 
         'PASSWORD': 'root',
         'HOST': 'localhost',
