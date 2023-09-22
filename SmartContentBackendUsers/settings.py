@@ -104,6 +104,9 @@ DATABASES = {
         'PORT': '3306',  # MySQL default port
         'OPTIONS': {
             'charset': 'utf8mb4',
+            'ssl': {
+                'ca': '/home/smartcontentmachine/projects/SmartContentBackendUsers/DigiCertGlobalRootCA.crt.pem', # Ruta al archivo SSL
+            },
         },
     }
 }
