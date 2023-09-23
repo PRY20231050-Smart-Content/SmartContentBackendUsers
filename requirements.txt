@@ -1,0 +1,9 @@
+django==4.1.7
+djangorestframework
+requests
+dj-rest-auth
+django-cors-headers
+mysqlclient
+djangorestframework-simplejwt
+dj-rest-auth[with_social]
+google-auth
