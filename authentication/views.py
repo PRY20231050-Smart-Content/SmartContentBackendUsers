@@ -34,7 +34,7 @@ class SignupView(APIView):
             # ID token is valid. Get the user's Google Account ID from the decoded token.
             email = idinfo['email']
             
-            print('carrrrrrrrrrrrrasrssdas ', email)
+            print('carrrrrrrrrrrrraassrssdas ', email)
 
             print('idinfo ', idinfo)
 
