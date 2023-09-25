@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(3$6iu*b2fvjr65do74pu(q&rvomf1l#fbr0kr87f7et@f&&#*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['20.106.131.22']
+ALLOWED_HOSTS = ['20.106.131.22', 'localhost']
 
 
 # Application definition
@@ -111,6 +111,21 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'tesis',
+#         'USER': 'root', 
+#         'PASSWORD': 'root',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#       'OPTIONS': {
+#             'charset': 'utf8mb4',
+#         },
+        
+#     }
+# }
+
 
 ACCOUNT_EMAIL_VERIFICATION = "none"
 
@@ -159,6 +174,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
+        "http://localhost:8001",
+
 ]
 
 REST_FRAMEWORK = {
